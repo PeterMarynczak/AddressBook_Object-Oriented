@@ -9,7 +9,7 @@ class MetodyPomocnicze{
 
 public:
     static string konwerjsaIntNaString(int liczba);
-
+    static char wczytajZnak();
 };
 
 #endif
