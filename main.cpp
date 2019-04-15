@@ -3,16 +3,16 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt");
 
     char wybor;
-    while (true){
-        //if (idZalogowanegoUzytkownika == 0){
+    while (true) {
+        if (ksiazkaAdresowa.czyUzytkownikJestZalogowany()) {
+
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuGlownego();
 
-            switch (wybor){
+            switch (wybor) {
             case '1':
                 ksiazkaAdresowa.rejestracjaUzytkownika();
                 break;
@@ -27,13 +27,31 @@ int main()
                 system("pause");
                 break;
             }
+        } else {
+            //if (adresaci.empty() == true)
+            //idOstatniegoAdresata = wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci, idZalogowanegoUzytkownika);
+            wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
+            switch (wybor) {
+            case '1':
+                //idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
+                break;
+            case '2':
+                //wyszukajAdresatowPoImieniu(adresaci);
+                break;
+            case '7':
+                //zmianaHaslaZalogowanegoUzytkownika(uzytkownicy, idZalogowanegoUzytkownika);
+                break;
+            case '8':
+                ksiazkaAdresowa.wylogowanieUzytkownika();
+                break;
+            }
         }
-
-      return 0;
+    }
+    return 0;
 }
 
 
-    //ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-    //ksiazkaAdresowa.rejestracjaUzytkownika();
+//ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+//ksiazkaAdresowa.rejestracjaUzytkownika();
 
 

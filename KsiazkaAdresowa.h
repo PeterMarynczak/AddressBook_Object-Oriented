@@ -18,6 +18,10 @@ public:
     void wypiszWszystkichUzytkownikow();
     void logowanieUzytkownika();
     char wybierzOpcjeZMenuGlownego();
+    int pobierzIdZalogowanegoUzytkownika();
+    bool czyUzytkownikJestZalogowany();
+    char wybierzOpcjeZMenuUzytkownika();
+    void wylogowanieUzytkownika();
 };
 
 #endif
