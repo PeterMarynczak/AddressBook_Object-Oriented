@@ -25,6 +25,10 @@ void KsiazkaAdresowa::wylogowanieUzytkownika(){
     uzytkownikMenedzer.wylogowanieUzytkownika();
 }
 
+void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika(){
+    uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika();
+}
+
 char KsiazkaAdresowa::wybierzOpcjeZMenuGlownego(){
 
     char wybor;

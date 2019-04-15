@@ -22,6 +22,7 @@ public:
     bool czyUzytkownikJestZalogowany();
     char wybierzOpcjeZMenuUzytkownika();
     void wylogowanieUzytkownika();
+    void zmianaHaslaZalogowanegoUzytkownika();
 };
 
 #endif
