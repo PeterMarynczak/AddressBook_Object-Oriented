@@ -21,3 +21,11 @@ char MetodyPomocnicze::wczytajZnak() {
     }
     return znak;
 }
+
+int MetodyPomocnicze::konwersjaStringNaInt(string liczba) {
+    int liczbaInt;
+    istringstream iss(liczba);
+    iss >> liczbaInt;
+
+    return liczbaInt;
+}

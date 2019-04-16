@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int _main() {
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt");
 
     char wybor;
@@ -50,8 +50,20 @@ int main() {
     return 0;
 }
 
-
 //ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
 //ksiazkaAdresowa.rejestracjaUzytkownika();
 
 
+//TESTY PlikZAdresatami
+
+#include "Adresat.h"
+#include "PlikZAdresatami.h"
+
+int main(){
+
+
+PlikZAdresatami plikZAdresatami("Adresaci.txt");
+plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(3);
+//cout << plikZAdresatami.pobierzIdOstatniegoAdresata();
+
+}
