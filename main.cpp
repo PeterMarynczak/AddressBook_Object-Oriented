@@ -28,16 +28,14 @@ int main() {
                 break;
             }
         } else {
-            //if (adresaci.empty() == true)
-            //idOstatniegoAdresata = wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci, idZalogowanegoUzytkownika);
+
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
             switch (wybor) {
             case '1':
                 ksiazkaAdresowa.dodajAdresata();
-                //idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
                 break;
             case '2':
-                //wyszukajAdresatowPoImieniu(adresaci);
+                ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;
             case '7':
                 ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();

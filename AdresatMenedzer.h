@@ -26,7 +26,8 @@ public:
         }
 
 void dodajAdresata();
-
+void wyswietlWszystkichAdresatow();
+void wyswietlDaneAdresata(Adresat adresat);
 };
 
 

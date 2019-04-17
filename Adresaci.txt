@@ -1,4 +1,0 @@
-1|5||||||
-2|2||||||
-3|2|Dsadsa|||||
-4|2|Jan|Kowalski|984-234-567|Jkowalski@tlne.pl|Warszewo , ul. polska|
