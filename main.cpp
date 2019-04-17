@@ -3,12 +3,12 @@
 
 using namespace std;
 
-int _main() {
-    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt");
+int main() {
+    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt", "Adresaci.txt" );
 
     char wybor;
     while (true) {
-        if (ksiazkaAdresowa.czyUzytkownikJestZalogowany()) {
+        if (!ksiazkaAdresowa.czyUzytkownikJestZalogowany()) {
 
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuGlownego();
 
@@ -33,6 +33,7 @@ int _main() {
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika();
             switch (wybor) {
             case '1':
+                ksiazkaAdresowa.dodajAdresata();
                 //idOstatniegoAdresata = dodajAdresata(adresaci, idZalogowanegoUzytkownika, idOstatniegoAdresata);
                 break;
             case '2':
@@ -54,7 +55,7 @@ int _main() {
 //ksiazkaAdresowa.rejestracjaUzytkownika();
 
 
-//TESTY PlikZAdresatami
+/*TESTY PlikZAdresatami
 
 #include "Adresat.h"
 #include "PlikZAdresatami.h"
@@ -64,6 +65,7 @@ int main(){
 
 PlikZAdresatami plikZAdresatami("Adresaci.txt");
 plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(3);
-//cout << plikZAdresatami.pobierzIdOstatniegoAdresata();
+cout << plikZAdresatami.pobierzIdOstatniegoAdresata();
 
 }
+*/
