@@ -35,6 +35,7 @@ void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika(){
     uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika();
 }
 
+
 char KsiazkaAdresowa::wybierzOpcjeZMenuGlownego(){
 
     char wybor;
@@ -90,4 +91,8 @@ void KsiazkaAdresowa::wyszukajAdresatowPoImieniu(){
 
 void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku(){
     adresatMenedzer->wyszukajAdresatowPoNazwisku();
+}
+
+void KsiazkaAdresowa::edytujAdresata(){
+    adresatMenedzer->edytujAdresata();
 }
