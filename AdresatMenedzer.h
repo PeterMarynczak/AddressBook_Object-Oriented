@@ -31,9 +31,8 @@ void wyswietlDaneAdresata(Adresat adresat);
 void wyszukajAdresatowPoImieniu();
 void wyszukajAdresatowPoNazwisku();
 void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
+void edytujAdresata();
 };
-
-
 
 
 #endif

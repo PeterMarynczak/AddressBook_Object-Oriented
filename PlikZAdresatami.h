@@ -21,7 +21,8 @@ Adresat pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami);
 int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
 int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
 string pobierzLiczbe(string tekst, int pozycjaZnaku);
-string zamienDaneAdresataNaLinieZDanymiOddzielonaPionowymiKreskami(Adresat adresat);
+void usunOdczytywanyPlik(string nazwaPlikuZRozszerzeniem);
+void zmienNazweTymczasowegoPlikuNaNazweOdczytywanegoPliku(string nazwaTymczasowegoPlikuZRozszerzeniem, string nazwaPlikuZRozszerzeniem);
 
 public:
 PlikZAdresatami(string nazwaPlikuZAdresatami) : NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami){
@@ -31,7 +32,11 @@ PlikZAdresatami(string nazwaPlikuZAdresatami) : NAZWA_PLIKU_Z_ADRESATAMI(nazwaPl
 int pobierzIdOstatniegoAdresata();
 vector <Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idZalogowanegoUzytkownika);
 bool dopiszAdresataDoPliku(Adresat adresat);
-
+string zamienDaneAdresataNaLinieZDanymiOddzielonaPionowymiKreskami(Adresat adresat);
+void edytujAdresata();
+void zaktualizujDaneAdresata(Adresat adresat);
+int podajIdWybranegoAdresata();
+char wybierzOpcjeZMenuEdycja();
 };
 
 

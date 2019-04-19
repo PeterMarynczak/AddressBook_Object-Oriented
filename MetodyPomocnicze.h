@@ -15,6 +15,8 @@ public:
     static int konwersjaStringNaInt(string liczba);
     static string wczytajLinie();
     static string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
+    static int podajIdWybranegoAdresata();
+    static int wczytajLiczbeCalkowita();
 };
 
 #endif
