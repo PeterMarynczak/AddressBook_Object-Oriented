@@ -32,6 +32,7 @@ void wyszukajAdresatowPoImieniu();
 void wyszukajAdresatowPoNazwisku();
 void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
 void edytujAdresata();
+void usunAdresata();
 };
 
 

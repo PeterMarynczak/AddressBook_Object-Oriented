@@ -37,6 +37,7 @@ void edytujAdresata();
 void zaktualizujDaneAdresata(Adresat adresat);
 int podajIdWybranegoAdresata();
 char wybierzOpcjeZMenuEdycja();
+void usunWybranaLinieWPliku(int idAdresata);
 };
 
 
