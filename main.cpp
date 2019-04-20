@@ -44,7 +44,7 @@ int main() {
                 ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;
             case '5':
-
+                ksiazkaAdresowa.usunAdresata();
                 break;
             case '6':
                 ksiazkaAdresowa.edytujAdresata();
@@ -61,8 +61,6 @@ int main() {
     return 0;
 }
 
-//ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-//ksiazkaAdresowa.rejestracjaUzytkownika();
 
 
 /*TESTY PlikZAdresatami
@@ -73,9 +71,16 @@ int main() {
 int main(){
 
 
-PlikZAdresatami plikZAdresatami("Adresaci.txt");
-plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(3);
-cout << plikZAdresatami.pobierzIdOstatniegoAdresata();
+PlikZAdresatami plikZAdresatami("Adresaci-test.txt");
+
+Adresat adresat(1,9,"Janek","Kowalski","888 111 222","jkowalski.o2.pl","ul.jankowska 3a");
+Adresat adresat2(12,8,"Janek","Kowalski","888 111 222","jkowalski.o2.pl","ul.jankowska 3a");
+
+plikZAdresatami.dopiszAdresataDoPliku(adresat);
+plikZAdresatami.dopiszAdresataDoPliku(adresat2);
+
+
+plikZAdresatami.usunWybranaLinieWPliku(12);
 
 }
 */

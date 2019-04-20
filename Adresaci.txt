@@ -1,3 +1,3 @@
-1|2|Pawel|Hgfhgfh|796 460 955|Hgfhghgf|Hgfhgfhgfhgf|
-2|2|Kornel|Gfdsg|Gfdhgd|Hgfdhgfd|Hdffh|
-3|2|Krasnal|Duzy|1232123123|Krasnal@tlen.pl|Lancut|
+3|2|kapa|mala|1232123123|Krasnal@tlen.pl|Warszewo|
+4|2|oka|Marynczak|1232123123|Krasnal@tlen.pl|Lancut|
+5|2|bola|trola|1232123123|Krasnal@tlen.pl|Lancut|
